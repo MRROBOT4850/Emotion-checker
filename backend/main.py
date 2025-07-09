@@ -42,4 +42,4 @@ async def detect_emotion(request: TextRequest):
         if any(keyword in text for keyword in keywords):
             return {"emotion": emotion, "confidence": emotion_confidence[emotion]}
    
-    return {"emotion": "Sorry we didn't anything that matches condition", "confidence": 0.0}
+    return {"emotion": "Sorry we didn't anything that matches your condition", "confidence": 0.0}
